@@ -4,7 +4,7 @@ A private desktop reading companion built with Python, PySide6, SQLite, and loca
 
 **Current version: 0.2.22 · Apple Silicon Mac build verified · Windows packaging prepared, unverified**
 
-![BookMatch catalog](screenshots/catalog.png)
+![BookMatch catalog](screenshots/catalog-with-covers.png)
 
 ## Features
 
@@ -89,7 +89,7 @@ QT_QPA_PLATFORM=offscreen .venv/bin/python -m scripts.capture_screenshots
 
 ## Screenshots
 
-![BookMatch Home](screenshots/home.png)
+![BookMatch Home](screenshots/home-with-covers.png)
 
 ![Custom shelves and ratings](screenshots/my-library-shelves.png)
 

@@ -54,10 +54,10 @@ def main() -> None:
         window.resize(1180, 820)
         window.show()
         app.processEvents()
-        window.grab().save(str(output / "home.png"))
+        window.grab().save(str(output / "home-with-covers.png"))
         window.navigate(4)
         app.processEvents()
-        window.grab().save(str(output / "catalog.png"))
+        window.grab().save(str(output / "catalog-with-covers.png"))
         window.sidebar_toggle.click()
         for _ in range(6):
             app.processEvents()
