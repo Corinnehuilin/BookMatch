@@ -79,7 +79,7 @@ QT_QPA_PLATFORM=offscreen BOOKMATCH_DATA_DIR=/tmp/bookmatch-package-check \
   dist/BookMatch.app/Contents/MacOS/BookMatch --self-test
 ```
 
-Regenerate synthetic screenshots without downloads:
+Regenerate screenshots using synthetic reading history and any public covers already cached on this computer, without downloads:
 
 ```sh
 QT_QPA_PLATFORM=offscreen .venv/bin/python -m scripts.capture_screenshots

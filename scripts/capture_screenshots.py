@@ -1,4 +1,4 @@
-"""Capture public demo screenshots with synthetic data only.
+"""Capture public demo screenshots with synthetic reading data and cached cover art.
 
 Run from the repository root with QT_QPA_PLATFORM=offscreen.
 """
@@ -16,7 +16,7 @@ from PySide6.QtGui import QColor, QPalette
 from PySide6.QtWidgets import QApplication
 
 from bookmatch_app.recommend import recommend
-from bookmatch_app.storage import LibraryStore
+from bookmatch_app.storage import LibraryStore, data_directory
 from bookmatch_app.dialogs import (AddBookDialog, BookDetailsDialog, CatalogPickerDialog,
                                    ShelfDialog, ManageShelvesDialog, GoalDialog, GoalBooksDialog)
 from bookmatch_app.widgets import ShelfSection
@@ -48,6 +48,9 @@ def main() -> None:
         for name in ("Book club", "Favorites", "Next year"):
             store.create_shelf(name)
         window = BookMatchWindow(store)
+        # Read only public artwork from the existing cache. Downloads are disabled;
+        # the real library, notes, and reading activity are never opened.
+        window.cover_cache.directory = data_directory() / "covers"
         window.resize(1180, 820)
         window.show()
         app.processEvents()

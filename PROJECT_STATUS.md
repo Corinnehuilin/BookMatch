@@ -17,7 +17,7 @@ Reviewed: 2026-09-30 · Version: 0.2.22 · Schema: 12
 - JSON import validates optional text, publication year, ratings, and reading dates before importing a record. Extreme CSV publication years are reported as invalid rather than overflowing during import.
 - JSON backup export writes to a temporary file, flushes it, and replaces the destination after writing succeeds. A failed replacement leaves the existing backup intact.
 - Shared popups omit icons; incorrect CLEAR confirmation gives feedback; goal deletion preserves library books and other goals; Genre labels are consistent across Catalog and Discover.
-- Source screenshots use temporary synthetic reading history and disable cover downloads. Private library counts, personal machine paths, and session-specific import details have been removed from publishable documentation.
+- Source screenshots use temporary synthetic reading history, reuse available public cover artwork, and disable cover downloads. Private library counts, personal machine paths, and session-specific import details have been removed from publishable documentation.
 
 ## Verification
 
