@@ -88,22 +88,16 @@ QT_QPA_PLATFORM=offscreen .venv/bin/python -m scripts.capture_screenshots
 [Source publishing procedure](docs/PUBLISHING.md) describes the staged-file audit and the contents intended for GitHub. No automated billing-dependent services are configured.
 
 ## Screenshots
-
-![BookMatch Home](screenshots/home-2026-10-02.png)
-
-![My Library](screenshots/my-library-2026-10-02.png)
-
-![Discover](screenshots/discover-2026-10-02.png)
-
-![Stats and Goals](screenshots/stats-goals-2026-10-02.png)
-
-![Choose a shelf](screenshots/choose-shelf-2026-10-02.png)
-
-![Book details and star ratings](screenshots/book-details-2026-10-02.png)
-
-![Set a reading goal](screenshots/reading-goal-2026-10-02.png)
-
-![Manage shelves](screenshots/manage-shelves-2026-10-02.png)
+<p align="center">
+  <img src="screenshots/home-2026-10-02.png" width="100%" alt="BookMatch Home">
+  <img src="screenshots/my-library-2026-10-02.png" width="100%" alt="BookMatch Home">
+  <img src="screenshots/discover-2026-10-02.png" width="100%" alt="BookMatch Home">
+  <img src="screenshots/stats-goals-2026-10-02.png" width="100%" alt="BookMatch Home">
+  <img src="screenshots/book-details-2026-10-02.png" width="55%" alt="BookMatch Home">
+  <img src="screenshots/choose-shelf-2026-10-02.png" width="40%" alt="BookMatch Home">
+  <img src="screenshots/reading-goal-2026-10-02.png" width="40%" alt="BookMatch Home">
+  <img src="screenshots/manage-shelves-2026-10-02.png" width="40%" alt="BookMatch Home">
+</p>
 
 ## License
 
