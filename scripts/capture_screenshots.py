@@ -41,8 +41,8 @@ def main() -> None:
     ):
         palette.setColor(role, QColor(color))
     app.setPalette(palette)
-    output = Path(__file__).resolve().parent.parent / "screenshots"
-    output.mkdir(exist_ok=True)
+    output = Path(__file__).resolve().parent.parent / ".local" / "demo-screenshots"
+    output.mkdir(parents=True, exist_ok=True)
     with tempfile.TemporaryDirectory(prefix="bookmatch-demo-") as folder:
         store = LibraryStore(Path(folder))
         for name in ("Book club", "Favorites", "Next year"):

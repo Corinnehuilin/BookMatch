@@ -13,7 +13,7 @@ Use the arrow beside **Your space** to collapse the sidebar into an icon rail. H
 
 The optional model is `BAAI/bge-small-en-v1.5` through FastEmbed. Its one-time download is free and builds a local index of the bundled catalog. After installation, search text and your library stay on your computer. Without it, Discover uses a labeled metadata fallback. Catalog subject tags are incomplete and are **not** verified content warnings.
 
-Book covers use the private cache in your local BookMatch data folder. Missing covers load from Open Library only when visible, using a public cover ID. If a cover is unavailable or you are offline, BookMatch shows its generated cover. Browsing a catalog book may send its cover ID to Open Library; it does not send your typed searches, notes, or Goodreads data. Cover artwork is not bundled with the app or included in the source repository. A resumable, free [Archive.org cover download](../data/SOURCE.md) can populate the private cache for offline use.
+Book covers use the private cache in your local BookMatch data folder. Missing covers load from Open Library only when visible, using a public cover ID. If a cover is unavailable or you are offline, BookMatch shows its generated cover. Browsing a catalog book may send its cover ID to Open Library; it does not send your typed searches, notes, or Goodreads data. The cover collection is not bundled with the app or source repository; published app screenshots can display covers. A resumable, free [Archive.org cover download](../data/SOURCE.md) can populate the private cache for offline use.
 
 In **Add a book**, **Find in offline catalog** searches locally and fills the selected work's available title, author, publication year, and a broad genre when its public subject tags support one. **Look up more details** is an optional, low-volume request to Open Library using only that public work ID. It can add a description. When opening **Details** for a catalog book, BookMatch also fills blank genre and description fields from local public metadata or looks up its description automatically if it has not been cached. It never replaces text you entered. Public values that still match Open Library are shaded and read only; missing fields and earlier personal edits remain editable. **Enter manually** in Add a book resets the catalog choice and unlocks the fields. Open Library records vary, so some fields may remain blank. Lookup responses are cached in your local data folder; typed search text and your Goodreads data are not sent.
 
@@ -25,6 +25,6 @@ Settings → **Clear saved books** removes every book from all shelves and clear
 
 **Export library JSON** backs up saved books and personal reading history, shelves (including empty shelves), collapse preferences, and reading goals. Keep that file private. Export uses a temporary file and replaces the destination after writing succeeds. Imports preview records and report invalid entries; existing saved books and identical goals are skipped. Imports are limited to 20 MB per file.
 
-## Dark mode concepts
+## Theme
 
-[Dark mode screenshots](../mockups/dark-mode/overview.png) are design proposals using synthetic reading history. The current app has the light theme shown in the main README; there is no dark mode switch yet.
+The current app has the light theme shown in the main README; there is no dark mode switch yet. The optional design-concept generator saves its output in the ignored `.local/dark-mode/` folder.

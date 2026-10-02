@@ -8,7 +8,7 @@ The initial source preparation uses `codex/github-prep`, intended to become the 
 
 - Python app source and packaging entry point.
 - Public 20,000-work catalog, aggregate reading-log counts, public cover IDs, and attribution.
-- Original app icon, synthetic screenshots, and clearly labeled dark mode concepts.
+- Original app icon and the nine screenshots supplied and approved by the owner on 2026-10-02.
 - Tests, packaging/data/demo scripts, pinned dependencies, Mac dependency lock, documentation, and ignore rules.
 
 ## Kept local
@@ -18,7 +18,7 @@ The initial source preparation uses `codex/github-prep`, intended to become the 
 - Bulk source dumps, downloaded covers, metadata caches, model weights and indexes.
 - Virtual environments, app bundles, ZIP installers, build folders, packaging caches, and publication manifests.
 
-The source-only first push does not publish an installer or create a GitHub Release. App-code licensing remains unassigned. Private reading data must never be substituted into the synthetic screenshots or fixtures.
+Source publication does not publish an installer or create a GitHub Release. App-code licensing remains unassigned. Raw Goodreads exports, personal backups, and private databases stay local. Publishing screenshots that display reading activity requires the owner's explicit authorization; the current gallery was supplied and authorized by the owner. Test fixtures and generated demo screenshots continue to use synthetic reading activity.
 
 ## Review the exact commit
 

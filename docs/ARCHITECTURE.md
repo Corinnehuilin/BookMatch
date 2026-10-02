@@ -20,8 +20,8 @@ BookMatch is a single-process Qt desktop application. It starts without a server
 | `data/` | Public catalog, public cover IDs, and provenance |
 | `scripts/` | Packaging, synthetic screenshots, catalog preparation, optional cover caching, repository audit |
 | `tests/` | Temporary-library unit and Qt interaction tests |
-| `screenshots/` | Current app demos with synthetic reading history |
-| `mockups/dark-mode/` | Design concepts, not a runtime theme |
+| `screenshots/` | Owner-supplied app screenshots approved for publication |
+| `.local/` | Ignored development outputs, including generated demo screenshots and dark mode concepts |
 
 ## Data boundaries
 

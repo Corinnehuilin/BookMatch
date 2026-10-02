@@ -116,7 +116,7 @@ def main():
                         ("HOVER_BG", "#354c3d"), ("HOVER_TEXT", "#d8eadc"),
                         ("SELECTED_BG", "#416c52"), ("SELECTED_TEXT", "#ffffff")):
         setattr(widgets, name, real_color(color))
-    output = Path(__file__).resolve().parent.parent / "mockups" / "dark-mode"
+    output = Path(__file__).resolve().parent.parent / ".local" / "dark-mode"
     output.mkdir(parents=True, exist_ok=True)
     with tempfile.TemporaryDirectory(prefix="bookmatch-dark-proposal-") as folder:
         store = LibraryStore(Path(folder))

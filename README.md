@@ -4,7 +4,7 @@ A private desktop reading companion built with Python, PySide6, SQLite, and loca
 
 **Current version: 0.2.22 · Apple Silicon Mac build verified · Windows packaging prepared, unverified**
 
-![BookMatch catalog](screenshots/catalog-with-covers.png)
+![BookMatch catalog](screenshots/catalog-2026-10-02.png)
 
 ## Features
 
@@ -58,7 +58,7 @@ Your library stays in `library.sqlite3` in the operating system’s BookMatch ap
 
 Goodreads exports, notes, reviews, ratings, and typed searches are never sent to Open Library or a hosted AI service. Covers and descriptions can be missing; generated covers and editable blank fields handle those cases. Subject tags and recommendation conflicts are incomplete community metadata, not verified content warnings.
 
-Git excludes databases, exports, bulk source dumps, cover/model caches, virtual environments, and build outputs. Demo screenshots use a temporary library with synthetic reading activity. No personal Goodreads export or old prototype is required to run or build BookMatch.
+Git excludes databases, exports, bulk source dumps, cover/model caches, virtual environments, and build outputs. The screenshots below were supplied and approved for publication by the project owner. No personal Goodreads export or old prototype is required to run or build BookMatch.
 
 Starting with 0.2.5, upgrading removes legacy page-count, reading-progress, and ISBN columns. External backup files are not modified. **Clear saved books** removes library memberships and reading activity while retaining shelf definitions, goals, book metadata, and downloads; see the [usage guide](docs/USAGE.md).
 
@@ -79,7 +79,7 @@ QT_QPA_PLATFORM=offscreen BOOKMATCH_DATA_DIR=/tmp/bookmatch-package-check \
   dist/BookMatch.app/Contents/MacOS/BookMatch --self-test
 ```
 
-Regenerate screenshots using synthetic reading history and any public covers already cached on this computer, without downloads:
+Generate separate local demo screenshots using synthetic reading history and any public covers already cached on this computer, without downloads. They are saved in the ignored `.local/demo-screenshots/` folder and do not replace the owner's published screenshots:
 
 ```sh
 QT_QPA_PLATFORM=offscreen .venv/bin/python -m scripts.capture_screenshots
@@ -89,11 +89,21 @@ QT_QPA_PLATFORM=offscreen .venv/bin/python -m scripts.capture_screenshots
 
 ## Screenshots
 
-![BookMatch Home](screenshots/home-with-covers.png)
+![BookMatch Home](screenshots/home-2026-10-02.png)
 
-![Custom shelves and ratings](screenshots/my-library-shelves.png)
+![My Library](screenshots/my-library-2026-10-02.png)
 
-![Selected-book reading goal](screenshots/custom-reading-goal.png)
+![Discover](screenshots/discover-2026-10-02.png)
+
+![Stats and Goals](screenshots/stats-goals-2026-10-02.png)
+
+![Choose a shelf](screenshots/choose-shelf-2026-10-02.png)
+
+![Book details and star ratings](screenshots/book-details-2026-10-02.png)
+
+![Set a reading goal](screenshots/reading-goal-2026-10-02.png)
+
+![Manage shelves](screenshots/manage-shelves-2026-10-02.png)
 
 ## License
 
